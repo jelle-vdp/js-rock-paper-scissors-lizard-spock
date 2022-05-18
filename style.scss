@@ -42,17 +42,17 @@ main {
         margin-bottom:2rem;
     }
 
-    .your-choise__title {
+    .your-choice__title {
         font-size:1.3rem;
         margin-bottom:0;
     }
 
-    .your-choise__output {
+    .your-choice__output {
         font-size:4rem;
         font-weight: 700;
     }
 
-    .your-choise__button-wrapper {
+    .your-choice__button-wrapper {
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -85,7 +85,7 @@ main {
         > div {
             width: calc(50% - 1rem);
 
-            .game-result__choise {
+            .game-result__choice {
                 font-size:2rem;
                 font-weight: 700;
             }

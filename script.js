@@ -6,15 +6,15 @@ const options = [
     "Spock"
 ];
 
-const yourChoiseEl = document.querySelector(".your-choise__output");
-const choiseButtons = document.querySelectorAll(".your-choise__button-wrapper button");
+const yourChoiceEl = document.querySelector(".your-choice__output");
+const choiceButtons = document.querySelectorAll(".your-choice__button-wrapper button");
 const playGameButton = document.querySelector(".play-game");
-const outputYourChoiseEl = document.querySelector(".game-result__you .game-result__choise");
-const outputOpponentChoiseEl = document.querySelector(".game-result__opponent .game-result__choise");
-const choisesEl = document.querySelector(".game-result")
+const outputYourChoiceEl = document.querySelector(".game-result__you .game-result__choice");
+const outputOpponentChoiceEl = document.querySelector(".game-result__opponent .game-result__choice");
+const choicesEl = document.querySelector(".game-result")
 const gameWinnerEl = document.querySelector(".game-winner");
 
-let yourChoise = false;
+let yourChoice = false;
 
 const generateOpponentMove = () => options[Math.floor(Math.random() * options.length)];
 
@@ -118,21 +118,21 @@ const generateResult = (you, opponent) => {
     }
 };
 
-choiseButtons.forEach(button => {
+choiceButtons.forEach(button => {
     button.addEventListener("click", () => {
-        yourChoiseEl.innerText = button.innerText;
-        yourChoise = button.innerText;
+        yourChoiceEl.innerText = button.innerText;
+        yourChoice = button.innerText;
     });
 });
 
 playGameButton.addEventListener("click", () => {
-    if (!yourChoise) {
-        window.alert("Make a choise");
+    if (!yourChoice) {
+        window.alert("Make a choice");
     } else {
-        choisesEl.style.display = "flex";
-        outputYourChoiseEl.innerText = yourChoise;
-        let opponentsChoise = generateOpponentMove();
-        outputOpponentChoiseEl.innerText = opponentsChoise;
-        generateResult(yourChoise, opponentsChoise);
+        choicesEl.style.display = "flex";
+        outputYourChoiceEl.innerText = yourChoice;
+        let opponentsChoice = generateOpponentMove();
+        outputOpponentChoiceEl.innerText = opponentsChoice;
+        generateResult(yourChoice, opponentsChoice);
     }
 });

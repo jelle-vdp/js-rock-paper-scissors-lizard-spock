@@ -43,17 +43,17 @@ main > *:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-main .your-choise__title {
+main .your-choice__title {
   font-size: 1.3rem;
   margin-bottom: 0;
 }
 
-main .your-choise__output {
+main .your-choice__output {
   font-size: 4rem;
   font-weight: 700;
 }
 
-main .your-choise__button-wrapper {
+main .your-choice__button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,12 +64,12 @@ main .your-choise__button-wrapper {
           justify-content: space-between;
 }
 
-main .your-choise__button-wrapper button {
+main .your-choice__button-wrapper button {
   background: #BFD7EA;
   color: #0B3954;
 }
 
-main .your-choise__button-wrapper button:hover {
+main .your-choice__button-wrapper button:hover {
   background: #accbe4;
 }
 
@@ -93,7 +93,7 @@ main .game-result > div {
   width: calc(50% - 1rem);
 }
 
-main .game-result > div .game-result__choise {
+main .game-result > div .game-result__choice {
   font-size: 2rem;
   font-weight: 700;
 }
