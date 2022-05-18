@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #BFD7EA;
+}
+
+main {
+  margin: auto;
+  padding: 2rem;
+  background-color: #0B3954;
+  color: #BFD7EA;
+  max-width: 800px;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 840px) {
+  main {
+    margin: 20px;
+  }
+}
+
+main button {
+  padding: 0.7rem 0.5rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border-width: 0px;
+}
+
+main > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+main .your-choise__title {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+main .your-choise__output {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+main .your-choise__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .your-choise__button-wrapper button {
+  background: #BFD7EA;
+  color: #0B3954;
+}
+
+main .your-choise__button-wrapper button:hover {
+  background: #accbe4;
+}
+
+main .play-game {
+  background: #EE6123;
+  color: #0B3954;
+}
+
+main .play-game:hover {
+  background: #e65312;
+}
+
+main .game-result {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .game-result > div {
+  width: calc(50% - 1rem);
+}
+
+main .game-result > div .game-result__choise {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main .game-winner {
+  font-size: 4rem;
+  color: #EE6123;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

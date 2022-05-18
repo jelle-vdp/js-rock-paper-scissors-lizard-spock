@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$c-light : #BFD7EA;
+$c-dark : #0B3954;
+$c-secondary: #EE6123;
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    min-height:100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $c-light;
+}
+
+main {
+    margin:auto;
+    padding:2rem;
+    background-color: $c-dark;
+    color: $c-light;
+    max-width:800px;
+    border-radius: 2rem;
+    text-align: center;
+
+    @media (max-width:840px){
+        margin: 20px;
+    }
+
+    button {
+        padding:0.7rem 0.5rem;
+        display: inline-block;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        border-width: 0px;
+    }
+
+    > *:not(:last-child) {
+        margin-bottom:2rem;
+    }
+
+    .your-choise__title {
+        font-size:1.3rem;
+        margin-bottom:0;
+    }
+
+    .your-choise__output {
+        font-size:4rem;
+        font-weight: 700;
+    }
+
+    .your-choise__button-wrapper {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        button {
+            background: $c-light;
+            color: $c-dark;
+
+            &:hover {
+                background: darken($c-light, 5%);
+            }
+        }
+    }
+
+    .play-game {
+        background: $c-secondary;
+        color: $c-dark;
+
+        &:hover {
+            background: darken($c-secondary, 5%);
+        }
+    }
+
+
+
+    .game-result {
+        display:none;
+        justify-content: space-between;
+
+        > div {
+            width: calc(50% - 1rem);
+
+            .game-result__choise {
+                font-size:2rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .game-winner {
+        font-size:4rem;
+        color: $c-secondary;
+        font-weight: 700;
+    }
+}
