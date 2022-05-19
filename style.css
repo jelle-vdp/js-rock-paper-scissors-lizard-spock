@@ -21,6 +21,7 @@ main {
   background-color: #0B3954;
   color: #BFD7EA;
   max-width: 800px;
+  width: 100%;
   border-radius: 2rem;
   text-align: center;
 }
@@ -53,6 +54,12 @@ main .your-choice__output {
   font-weight: 700;
 }
 
+@media (max-width: 500px) {
+  main .your-choice__output {
+    font-size: 3rem;
+  }
+}
+
 main .your-choice__button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,6 +69,14 @@ main .your-choice__button-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  main .your-choice__button-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 main .your-choice__button-wrapper button {
@@ -80,6 +95,16 @@ main .play-game {
 
 main .play-game:hover {
   background: #e65312;
+}
+
+main .reset-game {
+  display: none;
+  background: #68B0AB;
+  color: #0B3954;
+}
+
+main .reset-game:hover {
+  background: #57a7a2;
 }
 
 main .game-result {
@@ -102,5 +127,11 @@ main .game-winner {
   font-size: 4rem;
   color: #EE6123;
   font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  main .game-winner {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

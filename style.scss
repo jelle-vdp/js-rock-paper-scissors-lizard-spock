@@ -3,6 +3,7 @@
 $c-light : #BFD7EA;
 $c-dark : #0B3954;
 $c-secondary: #EE6123;
+$c-third: #68B0AB;
 
 * {
     margin:0;
@@ -23,6 +24,7 @@ main {
     background-color: $c-dark;
     color: $c-light;
     max-width:800px;
+    width:100%;
     border-radius: 2rem;
     text-align: center;
 
@@ -50,12 +52,22 @@ main {
     .your-choice__output {
         font-size:4rem;
         font-weight: 700;
+
+        @media (max-width:500px){
+            font-size: 3rem;
+        }
     }
 
     .your-choice__button-wrapper {
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 1rem;
+
+        
+        @media (max-width:500px){
+            justify-content: space-around;
+        }
 
         button {
             background: $c-light;
@@ -73,6 +85,17 @@ main {
 
         &:hover {
             background: darken($c-secondary, 5%);
+        }
+    }
+
+    
+    .reset-game {
+        display:none;
+        background: $c-third;
+        color: $c-dark;
+
+        &:hover {
+            background: darken($c-third, 5%);
         }
     }
 
@@ -96,5 +119,9 @@ main {
         font-size:4rem;
         color: $c-secondary;
         font-weight: 700;
+        
+        @media (max-width:500px){
+            font-size: 3rem;
+        }
     }
 }
