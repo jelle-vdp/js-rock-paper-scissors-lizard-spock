@@ -1,5 +1,5 @@
 # Rock paper scissors lizard Spock
-Link: https://jelle-vdp.github.io/rock-paper-scissors-lizard-spock/<br>
+Link: https://jelle-vdp.github.io/js-rock-paper-scissors-lizard-spock/<br>
 Description: an update of the Rock, paper, scissors game made for the BeCode webdevelopment course. Check the original instructions below:
 
 - Repository: `rock-paper-scissors-lizard-spock`
